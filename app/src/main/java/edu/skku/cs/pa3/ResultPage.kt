@@ -56,7 +56,7 @@ class ResultPage : AppCompatActivity() {
                     val req = Request.Builder()
                         .url(urllink)
                         .get()
-                        .addHeader("X-RapidAPI-Key", "7b4f3b0e8dmshdc637e8cdd29985p1c3caejsn2a8134c0e6b3")
+                        .addHeader("X-RapidAPI-Key", "API_KEY")
                         .addHeader("X-RapidAPI-Host", "fitness-calculator.p.rapidapi.com")
                         .build()
 
