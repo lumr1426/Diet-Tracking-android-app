@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/textview_askemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please type in your email"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_newemail"
+        app:layout_constraintStart_toStartOf="@+id/edittext_age" />
+
+    <EditText
+        android:id="@+id/edittext_newemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ems="10"
+        android:hint="New email"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@id/textview_askheight"
+        app:layout_constraintStart_toStartOf="@id/edittext_age" />
+
+    <TextView
+        android:id="@+id/textview_askheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please type in your password"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_age"
+        app:layout_constraintStart_toStartOf="@+id/edittext_age" />
+
+    <EditText
+        android:id="@+id/edittext_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ems="10"
+        android:hint="Your password"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@id/button_confirm"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textview_signuppage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="CONFIRM"
+        android:textSize="25sp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

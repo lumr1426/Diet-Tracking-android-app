@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstLogin">
+
+    <TextView
+        android:id="@+id/textview_firstlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_askusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Please enter your username"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edittext_age"
+        app:layout_constraintTop_toBottomOf="@id/textview_firstlogin" />
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ems="10"
+        android:hint="Username"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/textview_askusername"
+        app:layout_constraintStart_toStartOf="@id/edittext_age" />
+
+    <TextView
+        android:id="@+id/textview_askgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select your gender"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/edittext_age"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_username" />
+
+    <TextView
+        android:id="@+id/textview_askage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please type in your age"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edittext_age"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_male" />
+
+    <EditText
+        android:id="@+id/edittext_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_askage" />
+
+    <TextView
+        android:id="@+id/textview_askheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please type in your height"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/edittext_age"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_age" />
+
+    <EditText
+        android:id="@+id/edittext_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ems="10"
+        android:hint="Height"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_askheight" />
+
+    <TextView
+        android:id="@+id/textview_askweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please type in your weight"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/edittext_age"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_height" />
+
+    <EditText
+        android:id="@+id/edittext_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_askweight" />
+
+    <Button
+        android:id="@+id/button_confirm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="CONFIRM"
+        android:textSize="25sp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        app:layout_constraintStart_toStartOf="@+id/textview_askgender"
+        app:layout_constraintTop_toBottomOf="@+id/textview_askgender" />
+
+    <CheckBox
+        android:id="@+id/checkBox_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_male"
+        app:layout_constraintTop_toTopOf="@+id/checkBox_male" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

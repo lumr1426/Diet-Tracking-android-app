@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <TextView
+        android:id="@+id/textView_whatgoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select your goal"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+ />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton_weightloss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="Weight Loss" />
+
+        <RadioButton
+            android:id="@+id/radioButton_weightgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight Gain" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView_weightloss"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/weight_loss" />
+
+    <ImageView
+        android:id="@+id/imageView_weightgain"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/weight_gain" />
+
+    <TextView
+        android:id="@+id/textView_whatmagnitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="Please select the magnitude"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_magnitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_whatmagnitude">
+
+        <RadioButton
+            android:id="@+id/radioButton_mild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mild" />
+
+        <RadioButton
+            android:id="@+id/radioButton_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:text="Normal" />
+
+        <RadioButton
+            android:id="@+id/radioButton_extreme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Extreme" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_confirmmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:backgroundTint="@color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_mild"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@id/radioGroup_magnitude"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_normal"
+        app:srcCompat="@drawable/mild" />
+
+    <ImageView
+        android:id="@+id/imageView_normal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/radioGroup_magnitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/normal" />
+
+    <ImageView
+        android:id="@+id/imageView_extreme"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@id/radioGroup_magnitude"
+        app:layout_constraintStart_toEndOf="@+id/imageView_normal"
+        app:srcCompat="@drawable/extreme" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

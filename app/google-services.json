@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534419819477",
+    "project_id": "mobilepa3-4b80c",
+    "storage_bucket": "mobilepa3-4b80c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534419819477:android:a9bc60f1b439067f8c4b5c",
+        "android_client_info": {
+          "package_name": "edu.skku.cs.pa3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu1iPMm0kCPSCex8XeHzI89LX2tcTndwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
